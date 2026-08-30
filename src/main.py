@@ -32,6 +32,13 @@ def modulo(a: float, b: float) -> float:
     return a % b
 
 
+def square_root(a: float) -> float:
+    """Return the square root of a. Raises ValueError if a is negative."""
+    if a < 0:
+        raise ValueError("Cannot take square root of a negative number")
+    return a ** 0.5
+
+
 if __name__ == "__main__":
     print("Calculator demo")
     print(f"2 + 3 = {add(2, 3)}")
@@ -40,3 +47,4 @@ if __name__ == "__main__":
     print(f"2 ** 3 = {power(2, 3)}")
     print(f"10 / 2 = {divide(10, 2)}")
     print(f"10 % 3 = {modulo(10, 3)}")
+    print(f"sqrt(16) = {square_root(16)}")
