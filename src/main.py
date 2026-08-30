@@ -33,10 +33,10 @@ def modulo(a: float, b: float) -> float:
 
 
 if __name__ == "__main__":
-    print("Calculator demo")
-    print(f"2 + 3 = {add(2, 3)}")
-    print(f"5 - 2 = {subtract(5, 2)}")
-    print(f"4 * 3 = {multiply(4, 3)}")
-    print(f"2 ** 3 = {power(2, 3)}")
-    print(f"10 / 2 = {divide(10, 2)}")
-    print(f"10 % 3 = {modulo(10, 3)}")
+    print("=== Calculator Demo ===")
+    print(f"add(2, 3)      = {add(2, 3)}")
+    print(f"subtract(5, 2) = {subtract(5, 2)}")
+    print(f"multiply(4, 3) = {multiply(4, 3)}")
+    print(f"divide(10, 2)  = {divide(10, 2)}")
+    print(f"power(2, 3)    = {power(2, 3)}")
+    print(f"modulo(10, 3)  = {modulo(10, 3)}")
