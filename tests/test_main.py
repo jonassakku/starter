@@ -1,6 +1,7 @@
 """Basic tests for the calculator."""
 
-from src.main import add, subtract, multiply
+from src.main import add, subtract, multiply, divide
+import pytest
 
 
 def test_add():
@@ -13,3 +14,12 @@ def test_subtract():
 
 def test_multiply():
     assert multiply(4, 3) == 12
+
+
+def test_divide():
+    assert divide(10, 2) == 5
+
+
+def test_divide_by_zero():
+    with pytest.raises(ZeroDivisionError):
+        divide(10, 0)
